@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    .hover-me a {font-size: 15px;}
+    .hover-me a:hover {font-size:0;}
+    .hover-me a:hover:before {
+        content: 'About Us';
+        background-color: red;
+        font-size:15px;
+    }
+    ul{width: 100%;}
+    li{color:mediumpurple; list-style: none; font-size:20px; float: left; display: inline-block; width: 20%;  _transition:all 0.4s;}
+
+    .brand:hover{font-size:0;}
+    .brand:hover:before{content:'Brand'; _color: #fff; _background: mediumpurple; font-size: 20px; font-family: 'Poppins', sans-serif;}
+    .product:hover{font-size:0;}
+    .product:hover:before{content:'Product'; _color: #fff; _background: mediumpurple; font-size: 20px; font-family: 'Poppins', sans-serif;}
+    .review:hover{font-size:0;}
+    .review:hover:before{content:'Review'; _color: #fff; _background: mediumpurple; font-size: 20px; font-family: 'Poppins', sans-serif;}
+    .event:hover{font-size:0;}
+    .event:hover:before{content:'Event'; _color: #fff; _background: mediumpurple; font-size: 20px; font-family: 'Poppins', sans-serif;}
+    .cscenter:hover{font-size:0;}
+    .cscenter:hover:before{content:'Cs Center'; _color: #fff; _background: mediumpurple; font-size: 20px; font-family: 'Poppins', sans-serif;}
+
+    .sample{position:relative;}
+    
+    .sample>p{position:absolute; top:0; transition:all 0.4s;}
+    .kr{opacity:1;}
+    .en{opacity:0;}
+
+    .sample:hover .kr{opacity:0;}
+    .sample:hover .en{opacity:1;}
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li class="brand">브랜드</li>
+    <li class="product">제품</li>
+    <li class="review">후기</li>
+    <li class="event">이벤트</li>
+    <li class="cscenter">고객센터</li>
+  </ul>
+
+  <div class="sample">
+    <p class="kr">브랜드</p>
+    <p class="en">Brand</p>
+  </div>
+
+
+  <div class="apple">
+      <img src="apple.png" alt="apple1">
+      <img src="apple_02.png" alt="apple2">
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+
+    // $(function(){
+    //   $(".sample").on("mouseenter", function(){
+    //     $(".kr").fadeOut(300);
+    //     $(".en").fadeIn(300);
+    //   });
+
+    //   $(".sample").on("mouseleave", function(){
+    //     $(".kr").fadeIn(300);
+    //     $(".en").fadeOut(300);
+    //   });
+    // });
+
+  </script>
+</body>
+</html>
+
+<!-- .counter:hover:after {
+  content: "hello";
+  font-size:initial;
+}
+.counter:hover {
+  font-size:0;
+}
+  -->
