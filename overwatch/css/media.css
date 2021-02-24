@@ -1,0 +1,81 @@
+
+@media (max-width: 1200px){
+  .nav .navBox{padding: 10px 10px ;}
+
+  .navBox .mainNav li{padding: 0 10px;}
+  .newsSection .newsBoxes .newsImgSec>a{height: 150px;}
+}
+
+
+
+@media (max-width: 1024px){
+  .nav .navBox{padding: 10px 10px;}
+  .nav .navBox .navLogo{width: 10%;}
+  .navBox .navList{width: 90%;}
+
+  .newYearBanner .newYeardetail{padding: 150px 40px;}
+  .newYearBanner .detailTxt h1{font-size: 34px;}
+  .newYearBanner .detailTxt h2{font-size: 18px;}
+  .newYearBanner .detailTxt p{font-size: 14px;}
+  .newYearBanner .detailTxt a{padding: 5px 30px; margin-top: 10px;}
+
+  .saleBanner .saledetail{padding: 70px 0;}
+  .saleBanner .detailTxt h1{font-size: 34px;}
+  .saleBanner .detailTxt h2{font-size: 18px;}
+  .saleBanner .detailTxt p{font-size: 14px;}
+  .saleBanner .detailTxt a{padding: 5px 30px; margin-top: 10px;}
+
+
+  .newsSection .newsLeftBox{width: 100%;}
+  .newsSection .newsRightBox{width: 100%;}
+  
+  /* .newsSection .newsBoxes .newsImgSec>a{height: 100px;} */
+}
+
+
+
+@media (max-width: 900px){
+  .newYearBanner .newYearBannerImg{background: url(../img/event_banner_2.jpeg); background-repeat: no-repeat; background-position-x: 50%;}
+  .newYearBanner .newYeardetail{padding: 290px 40px 40px; text-align: center;}
+  .newYearBanner .detailTxt{width: 100%; display:flex; flex-direction: column; align-items: center; margin-top: 20px;}
+  .newYearBanner .detailTxt h1{font-size: 45px;}
+  .newYearBanner .detailTxt p{width: 100%;}
+
+  .saleBanner .saleBannerImg{background: url(../img/event_banner_4.jpeg);background-repeat: no-repeat; background-position-x: center;}
+  .saleBanner .saledetail{padding: 280px 40px 40px;}
+  .saleBanner .detailTxt{width: 100%; text-align: center;}
+  .saleBanner .detailTxt h1{font-size: 45px;}
+
+
+  /* .newsSection .newsBoxes{display: none;} */
+  .newsSection .newsConBox{display: flex; flex-direction: column-reverse;}
+}
+
+
+
+@media (max-width: 800px){
+
+  /* .headerSection .video video{width: auto; height: 150%;} */
+
+  .nav .navBox{display: none;}
+.nav .navBox .navLogo{display: none;}
+.navBox .navList{width: 100%;}
+.mobileNav{display: block;}
+
+
+
+
+
+
+
+.hero .heroCon .heroDesc{display: block;}
+.hero .heroCon .heroDesc .heroImg{width: 100%;}
+.hero .heroCon .heroDesc .heroTxt{width: 100%; text-align: center;}
+.hero .heroList{float: left;}
+
+
+
+
+
+
+}

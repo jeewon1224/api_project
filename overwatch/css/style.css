@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@font-face { font-family: 'koverwatch'; src: url(../font/koverwatch.ttf) format('truetype');}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+
+
+/* ----------------------------------------- */
+/* css 리셋 */
+*{margin: 0; padding: 0; box-sizing: border-box;}
+ol, ul{list-style: none;}
+body{font-size: 14px; font-family: 'Noto Sans', sans-serif; }
+.clear:after{clear: both; display: block; content: '';}
+a{text-decoration: none;}
+.center{width: 100%; height: auto; max-width: 1400px; margin: auto;}
+
+
+
+/* ----------------------------------------- */
+/* 네비게이션 */
+.nav{width: 100%; height: auto; background: #111;position: fixed; top: 0; left: 0; z-index: 999;}
+.nav .navBox{width: 100%; height: auto; padding: 10px 0; }
+.nav .navBox .navLogo{width: 7%; float: left; _margin-right: 20px;}
+.nav .navBox .navLogo a{width: 90px; height: auto; display: block;}
+.nav .navBox .navLogo img{width: 100%;}
+/* .nav .navLogo>div{background-image: url(../img/blizzard.png); width: 100%; height: 50px; background-size: cover; background-repeat: no-repeat;} */
+
+
+/* 메인 네이게이션 */
+
+/* .navBox .leftNav{width: 95%;} */
+.navBox .navList{width: 93%; float: left;}
+
+.navBox .mainNav{float: left; width: 80%; height: auto;}
+.navBox .mainNav li{display: inline-block; padding: 0 20px; line-height: 2.8; }
+.navBox .mainNav li>div{color: #fff; transition: all 0.4s; cursor: pointer;}
+.navBox .mainNav li>a{color: #fff; transition: all 0.4s;}
+
+/* .navBox .mainNav li a:hover{color: #fa9c1e;} */
+.navBox .mainNav li:hover>a,
+.navBox .mainNav li:hover>div{color: #fa9c1e;}
+
+
+/* 2depth 메뉴 */
+.navBox .mainNav li ul{_display: none;  background:#222; display:none; height:auto; border:0px; position:absolute; width:200px; z-index:200; /*top:1em; /*left:0;*/ transition: all 1s;}
+
+/* .navBox .mainNav li:hover ul{_display:block;} */
+.navBox .mainNav li li{background: #222; display:block; float:none; margin:0px;
+ padding:0 30px; width:100%;}
+
+
+ /* 사이드 네비게이션 */
+.navBox .sideNav{width: 20%; float: left;}
+.navBox .sideNav li{display: inline-block; padding: 0 10px; line-height: 2.8; float: right;}
+.navBox .sideNav li a{color: #fff;}
+
+
+
+
+
+/* .navBox .rightNav{width: 20%; position: absolute; top: 0; right: 0;}
+.navBox .sideNav{_width: 20%; float: right;}
+.navBox .sideNav li{display: inline-block;} */
+
+
+
+
+/* 모바일 용 네비게이션 */
+.mobileNav{width: 100%; background: #fff; top: 0; left: 0; position: absolute; text-align: center; height: 60px; display: none;}
+
+
+/* --------------------------------------------- */
+/* section 2 - header video section */
+
+.headerSection{display: block; width: 100%; _min-height: 600px; overflow: hidden; position: relative; _height: 75vh;}
+.headerSection .video{overflow: hidden;}
+.headerSection .video video{display: block; width: 100%;}
+
+.headerCon{position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%); display: flex; flex-direction: column;}
+.headerCon .headerLogo{width:100%; text-align: center; margin-bottom: 30px; height: auto;}
+.headerCon .headerLogo img{width: 100%;}
+
+/* header buttons */
+.headerSection .headerBtns{width: 100%; height: auto; text-align: center;}
+.headerSection .headerBtns a{color: #fff; font-size: 18px; padding: 10px 30px; _background: tomato; margin: 0 20px; width: 30%; display: inline-block; border-radius: 3px;}
+.headerSection .headerBtns a.trailerBtn{_background: #007dd1;background: rgba(39, 130, 250, 0.9);}
+.headerSection .headerBtns a.buyBtn{_background:#fa9c1e; background: rgba(248, 89, 26, 0.9);}
+
+
+/* header link logos */
+.headerSection .linkLogos{width: 100%; height: auto; display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 50px 0;
+}
+
+.headerSection .linkLogos>a{padding: 10px; display: inline-block;}
+.headerSection .linkLogos .logo1{_width: auto; height: auto; float: left; width: 70px;}
+/* .headerSection .linkLogos .logo1 h2{width: 100%; color: #fff; font-weight: 500; font-size: 40px;font-family: 'Roboto', sans-serif;} */
+.headerSection .linkLogos .logo1 img{width: 100%;}
+
+
+.headerSection .linkLogos .logo2{width: 180px; height: auto; float: left;}
+.headerSection .linkLogos .logo2 img{width: 100%; }
+
+.headerSection .linkLogos .logo3{width: 200px; height: auto; float: left;}
+.headerSection .linkLogos .logo3 img{width: 100%; }
+
+.headerSection .linkLogos .logo4{width: 220px; height: auto; float: left;}
+.headerSection .linkLogos .logo4 img{width: 100%; }
+
+
+
+
+
+/*------------------------------------------------------------*/
+
+/* event 섹션 */
+
+/* 새해 배너 섹션 */
+.eventSection{width: 100%; height: auto; _position: relative;}
+.eventSection .newYearBanner{width: 100%; height: auto; overflow: hidden; position: relative; display: flex; justify-content: center; align-items: center;;
+}
+.newYearBanner .newYearBannerImg{width: 100%; height: auto; _position: absolute; height: auto; background: url(../img/event_banner_1.jpeg); background-position: 50%;}
+.newYearBanner .newYearBannerImg img{width: 135%; height: auto; float: left; transform: translateX(-300px); }
+
+.newYearBanner .newYeardetail{_position: absolute; width: 100%; height: auto; display: flex; justify-content: flex-end; padding: 130px 40px;}
+/* .newYearBanner .detailTxt{text-align: left; margin-left: 55%; display: flex; flex-direction: column; _position: absolute; margin-top: 130px;} */
+.newYearBanner .detailTxt{width: 50%; _margin-left: 50%;}
+.newYearBanner .detailTxt h1{font-size: 54px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
+.newYearBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
+.newYearBanner .detailTxt p{font-size: 15px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400; width: 100%;}
+.newYearBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(248, 89, 26, 0.9); text-align: center; margin-top: 30px;}
+.newYearBanner .detailTxt a:hover{}
+
+.eventSection .saleBanner{width: 100%; height: auto; overflow: hidden; position: relative;     display: flex;justify-content: center; align-items: center;}
+.saleBanner .saleBannerImg{width: 100%; height: auto; background: url(../img/event_banner_3.jpeg); background-position: 50%;}
+.saleBanner .saleBannerImg img{width: 100%; height: auto; overflow: hidden; float: left; transform: translateX(-20%); }
+
+
+/* 세일 배너 섹션 */
+.saleBanner .saledetail{_position: absolute; width: 100%; height: auto; padding: 40px 0 ;}
+.saleBanner .detailTxt{text-align: right; width: 50%;}
+.saleBanner .detailTxt h1{font-size: 54px; color: #4b535d; font-weight: 500; font-family: 'koverwatch', sans-serif;}
+.saleBanner .detailTxt h2{font-size: 25px; font-weight: 400; font-family: 'Noto Sans KR',sans-serif; color: #51658e; padding: 10px 0;}
+.saleBanner .detailTxt p{font-size: 15px; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+.saleBanner .detailTxt a{color: #fff; font-size: 18px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; background: rgba(39, 130, 250, 0.9); text-align: center; margin-top: 30px; transition: all 0.4s;}
+.saleBanner .detailTxt a:hover{background: rgba(39, 130, 250, 0.7);}
+
+
+
+
+
+
+/* 뉴스 섹션 */
+.newsSection{width: 100%; height: auto; margin: auto;}
+.newsSection .news_bg{background-image: url(../img/news_bg.jpg); width: 100%; height:auto; background-repeat: no-repeat; background-size: cover; background-position: 50%;}
+
+
+.newsSection .newsConBox{width: 100%; height: auto; padding: 50px 40px; }
+
+.newsSection .newsLeftBox{width: 50%; height: auto; float: left;}
+.newsSection .newsLeftBox .newsHeader{width: 100%; display: flex; align-items: center; margin-bottom: 20px; align-items: center;} 
+.newsSection .newsLeftBox .newsHeader h3,
+.newsSection .newsLeftBox .newsHeader a{font-size: 19px; font-weight: 600; font-family:'Noto Sans KR',sans-serif}
+.newsSection .newsLeftBox .newsHeader a i{font-size: 25px; padding-left: 10px;}
+.newsSection .newsLeftBox .newsHeader span{padding: 0 10px;}
+.newsSection .newsLeftBox .newsHeader a{color: #fa9c1e;}
+
+
+.newsSection .newsBoxes{width: 100%; display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 1fr 1fr; padding-right: 20px; padding-bottom: 15px; gap: 5px;}
+
+.newsSection .newsBoxes>div{width: 100%; border: 1px solid #ddd; height: auto; float: left; padding: 5px; display: flex; flex-direction: column; margin: 10px 0;}
+.newsSection .newsBoxes .newsImgSec{width: 100%; height: auto; border: 1px solid #ddd; overflow: hidden;}
+.newsSection .newsBoxes .newsImgSec>a{width: 100%; height: 200px; padding: 5px; background-image: url(../img/news_1.png); background-size: cover; display: block; background-repeat: no-repeat; background-position: 50%;}
+
+.newsSection .newsBoxes .newsImgSec>a.grid2{background-image: url(../img/news_2.png); }
+.newsSection .newsBoxes .newsImgSec>a.grid3{background-image: url(../img/news_3.png); }
+.newsSection .newsBoxes .newsImgSec>a.grid4{background-image: url(../img/news_4.png); }
+
+/* .newsSection .newsBoxes .newsImgSec>a>img{width: 200px; height: 100px;} */
+.newsSection .newsBoxes .newsImgSec>a:hover{transform: scale(1.03);}
+
+.newsSection .newsBoxes .newsTitSec{width: 100%; height: auto; _border: 1px solid #ddd; margin-top: 10px; padding: 5px 10px;}
+.newsSection .newsBoxes .newsTitSec a{display: block; color: #222; font-size: 15px; margin-bottom: 5px;}
+.newsSection .newsBoxes .newsTitSec span{ color: #4b535d; font-size: 16px;}
+
+
+
+/* ------------ */
+
+.newsSection .newsRightBox{width: 25%; height: auto; float: left; display: flex; flex-direction: column; text-align: center; align-items: center; transform: translateY(50%);}
+.newsSection .newsRightBox>div{width: 25%;}
+.newsSection .newsRightBox>div {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsSection .newsRightBox>div h4{width: 100%; font-size: 20px; color: #333;}
+.newsSection .newsRightBox>div img{width: 250px; margin: 15px 0;}
+.newsSection .newsRightBox>div a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; margin-top: 30px; transition: all 0.4;}
+
+.newsSection .newsRightBox>div a:hover{transform: scale(1.05, 1.05);}
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* 영웅 섹션 */
+.hero{width: 100%; height: auto; margin: auto;}
+.hero .hero_bg{background-image: url(../img/hero_Sec_bg.jpg); width: 100%; height:auto; background-repeat: no-repeat; background-size: cover; background-position: 50%;}
+.hero .heroCon{width: 100%; height: auto; padding: 70px;}
+
+.hero .heroCon .heroTit{width: 100%; height: auto; text-align: center; margin-bottom: 30px;}
+.hero .heroCon .heroTit h1{font-size: 54px;  font-family: 'koverwatch'; font-weight: 500; color: #4b535d;}
+.hero .heroCon .heroTit p{font-size: 20px; font-weight: 500; margin: 20px 0 50px; color: #333; font-family: 'Noto Sans KR',sans-serif; font-weight: 400;}
+
+
+.hero .heroCon .heroPanel{margin-top: 50px;}
+.hero .heroCon .heroDesc{width: 100%; height: 400px; _background: cornsilk; display: flex; align-items: center; justify-content: center;}
+
+.hero .heroCon .heroDesc .heroImg{width: 50%; height: auto; text-align: center;}
+.hero .heroCon .heroDesc .heroImg>div{width: 100%; text-align: center;}
+.hero .heroCon .heroDesc .heroImg img{_width: 490px; height: 400px;} 
+
+.hero .heroCon .heroDesc .heroTxt{width: 50%; display: flex; align-items: center; text-align: left;}
+.hero .heroCon .heroDesc .heroTxt>div{width:100%;}
+.hero .heroCon .heroDesc .heroTxt h2{font-family: 'koverwatch'; font-size: 45px; color: #4b535d;} 
+.hero .heroCon .heroDesc .heroTxt p{font-size: 25px; margin-top: 20px; font-weight: 200; font-family: 'koverwatch'; color: #444;}
+
+
+
+.hero .heroList{width: 100%; margin: 50px 0; text-align: center;}
+
+.hero .heroList>a{display: block; font-family: 'Noto Sans KR',sans-serif; background: #4b535d; color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px; margin-top: 30px; transition: all 0.4;}
+.hero .heroList>a:hover{transform: scale(1.05, 1.05);}
+
+
+
+.hero .heroList .heroPortrait{width: 100%; padding: 0 70px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center;}
+
+.hero .heroList .heroPortrait>div{display: inline-block; margin: 10px 5px; display: flex; flex-direction: column; align-items: center; transition: all 0.4}
+
+/* .hero .heroList .heroPortrait>div:hover{transform: scale(1.2); } */
+
+
+.hero .heroList .heroPortrait>div a{_background-image: url(../img/hero_portrait_1.png); _height: 100px; display: inline-block;  border: 3px solid #ccc; _transform: skewX(-10deg); overflow: hidden; background: #333; border-radius: 5px; width: 76px; height: 86px; transition: all 0.4;}
+
+/* .hero .heroList .heroPortrait>div a:hover{transform: scale(1.3); } */
+.hero .heroList .heroPortrait>div:hover a{background: #fa9c1e;transform: scale(1.3);}
+.hero .heroList .heroPortrait>div a img{width: 100%; height: 100%; _transform: skewX(10deg)}
+
+.hero .heroList .heroPortrait>div:hover a img{_transform: skewX(10deg);}
+
+.heroList .heroPortrait span{ display: inline-block; align-items: center; border-radius: 3px; padding: 2px 4px; font-size: 12px; font-weight: 500; z-index: 999; text-align: center; color: #4b535d;}
+
+.hero .heroList .heroPortrait>div:hover span{background: #fff;}
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* 판매 섹션 */
+
+
+.buyNow{width: 100%; height: auto;}
+.buyNow .buy_bg{background-image: url(../img/footer_bg.jpeg); width: 100%; height:auto; background-repeat: no-repeat; background-size: cover; background-position: 50%; border-top: 1px solid #ddd; border-bottom: 5px solid #555;}
+
+.buyNow .container{width: 100%; height: auto; display: flex; justify-content: center; align-items: center;}
+.buyNow .container .buyLeft{width: 50%; text-align: right;}
+.buyNow .container .buyLeft img{width: 320px; padding: 30px;}
+.buyNow .container .buyRight{width: 50%; text-align: left;}
+
+.buyRight>div{width: 100%;}
+.buyRight h1{font-size: 35px; font-family: 'koverwatch'; color: #4b535d;}
+.buyRight p{font-style: 18px;margin: 20px 0;}
+.buyRight a{display: block; background: rgba(248, 89, 26, 0.9); color: #fff; font-size: 24px; padding: 10px 30px; ; width:200px; display: inline-block; border-radius: 3px;  transition: all 0.4; text-align: center;}
+
+
+
+
+
+/* ----------------------------------------------------- */
+/* sns 섹션 */
+
+.sns{width: 100%; height: auto; background: #111}
+.snsContainter{width: 100%; height: auto; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 30px 0;}
+.snsContainter h2{font-size: 26px; font-weight: 700; color: #fff; margin-bottom: 20px;}
+.snsContainter ul{display: flex; align-items: center; justify-content: center;}
+.snsContainter ul li{width: 60px; height: 60px; border:1px solid #999; border-radius: 50%;text-align: center;  margin: 15px; display: flex; align-items: center; justify-content: center; }
+.snsContainter ul li a{border: 2px solid #999; width: 50px; height: 50px; border-radius: 50%; display: flex; align-items: center; justify-content: center; transition: all 0.4s;}
+.snsContainter ul li a i{font-size: 30px; color: #999; transition: all 0.4s;}
+
+.snsContainter ul li:hover a{background: #999;}
+.snsContainter ul li:hover a i{color: #111;}
+
+
+
+/* ----------------------------------------------------- */
+/* footer 섹션 */
+
+.footer{width: 100%; height: auto; background: #f0edf2;}
+.footerContainter{width: 100%; height: auto; padding: 30px 0;}
+
+.langSelect{width: 100%; height: auto;}
+.langSelect .selected{text-align: center; transition: all 0.4s;}
+.langSelect .selected .globe{}
+.langSelect .selected .globe i{color: #00c6ff; font-size: 20px;}
+.langSelect .selected:hover .globe i{color: rgb(106, 253, 253);}
+.langSelect .selected span{font-size: 16px; margin: 10px;}
+.langSelect .selected .arrow{}
+.langSelect .selected .arrow i{font-size: 18px;}
+
+
+.footerLogo{width: 100%; text-align: center; padding: 30px;}
+.footerLogo>div{}
+.footerLogo>div img{width: 125px;}
+
+
+
+.footerNav{width: 100%; height: auto; text-align: center; }
+.footerNav div{display: flex; align-items: center; justify-content: center;}
+.footerNav div a{display: inline-block; color: rgba(0,0,0,.7); font-size: 14px; transition: all 0.4s;}
+.footerNav div a:hover{color: #000;}
+.footerNav div span{margin: 0 15px; color: rgba(0,0,0,.7); display: inline-block; font-size: 14px;}
+
+
+
